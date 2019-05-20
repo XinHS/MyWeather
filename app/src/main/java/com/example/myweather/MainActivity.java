@@ -47,12 +47,14 @@ public class MainActivity extends AppCompatActivity {
     String location;
     ImageButton B_plus;
     LinearLayoutCompat ly_container;
+    String arr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
         if (prefs.getString("weather", null) != null) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
@@ -100,6 +102,10 @@ public class MainActivity extends AppCompatActivity {
         tv_pre_day3_mintmp = (TextView) findViewById(R.id.tv_pre_day3_mintmp);
         tv_pre_day3_cond = (TextView) findViewById(R.id.tv_pre_day3_cond);
         tv_pre_day3_wind = (TextView) findViewById(R.id.tv_pre_day3_wind);
+//        Intent intent=getIntent();
+//        Bundle b=intent.getExtras();
+//        arr=b.getString("weather_id");
+//        et_location.setText(arr);
         B_plus .setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,Tracnsfer.class);
@@ -109,6 +115,10 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        Intent intent=getIntent();
+        String name=intent.getStringExtra("weather_id");
+        et_location.setText(name);
+
     }
 
     public void weatherClick(View view) {
@@ -176,8 +186,15 @@ public class MainActivity extends AppCompatActivity {
                 tv_pre_day3_mintmp.setText("最低温度:" + day3_mintmp);
                 tv_pre_day3_cond.setText("天气:" + day3_cond);
                 tv_pre_day3_wind.setText("风向:" + day3_wind);
-
-
+                if (cond.equals("阴")){
+                    ly_container.setBackgroundResource(R.mipmap.weather_ying);
+                }else if (cond.equals("小雨")){
+                    ly_container.setBackgroundResource(R.mipmap.weather_xiaoyu);
+                }else if (cond.equals("晴")){
+                    ly_container.setBackgroundResource(R.mipmap.weather_qing);
+                }else if (cond.equals("大雨")){
+                    ly_container.setBackgroundResource(R.mipmap.weather_xiaoyu);
+                }
             }
         }, new Response.ErrorListener() {
             @Override

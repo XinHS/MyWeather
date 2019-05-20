@@ -5,7 +5,7 @@
     android:layout_gravity="center"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="@drawable/weather04"
+    android:background="@drawable/background"
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
     android:id="@+id/ly_container">
@@ -20,6 +20,7 @@
         android:id="@+id/id_tv_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp" />
 
     <TextView
@@ -32,19 +33,22 @@
         android:id="@+id/id_tv_max_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
 
     <TextView
         android:id="@+id/id_tv_min_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
 
     <TextView
         android:id="@+id/id_tv_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
 
     <TextView
         android:id="@+id/id_tv_cond"
