@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
             tv_pre_day3_maxtmp, tv_pre_day3_mintmp, tv_pre_day3_cond, tv_pre_day3_wind,
             title_pre, title_pre_day1, title_pre_day2, title_pre_day3;
     String location;
-    ImageButton B_plus;
+    Button B_plus;
+    Button my_button;
     LinearLayoutCompat ly_container;
     String arr;
 
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         if (prefs.getString("weather", null) != null) {
@@ -102,10 +104,14 @@ public class MainActivity extends AppCompatActivity {
         tv_pre_day3_mintmp = (TextView) findViewById(R.id.tv_pre_day3_mintmp);
         tv_pre_day3_cond = (TextView) findViewById(R.id.tv_pre_day3_cond);
         tv_pre_day3_wind = (TextView) findViewById(R.id.tv_pre_day3_wind);
-//        Intent intent=getIntent();
-//        Bundle b=intent.getExtras();
-//        arr=b.getString("weather_id");
-//        et_location.setText(arr);
+        my_button = findViewById(R.id.position_button);
+        my_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,MyPositionActivity.class);
+                startActivity(intent);
+            }
+        });
         B_plus .setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,Tracnsfer.class);
@@ -194,6 +200,8 @@ public class MainActivity extends AppCompatActivity {
                     ly_container.setBackgroundResource(R.mipmap.weather_qing);
                 }else if (cond.equals("大雨")){
                     ly_container.setBackgroundResource(R.mipmap.weather_xiaoyu);
+                }else if (cond.equals("多云")){
+                    ly_container.setBackgroundResource(R.mipmap.weather_duoyun);
                 }
             }
         }, new Response.ErrorListener() {

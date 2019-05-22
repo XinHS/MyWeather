@@ -9,18 +9,40 @@
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
     android:id="@+id/ly_container">
-
-    <ImageButton
-        android:id="@+id/plus"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@mipmap/plus"
-        android:layout_gravity="left"/>
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorGree"
+            android:text="+"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/position_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorB"
+            android:text="我的位置"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
     <TextView
         android:id="@+id/id_tv_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorBlue"
         android:textSize="20sp" />
 
     <TextView
@@ -54,7 +76,8 @@
         android:id="@+id/id_tv_cond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="@color/colorYellow"/>
 
     <TextView
         android:id="@+id/id_tv_dir"
@@ -113,19 +136,22 @@
                 android:id="@+id/tv_pre_day1_maxtmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
 
             <TextView
                 android:id="@+id/tv_pre_day1_mintmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
 
             <TextView
                 android:id="@+id/tv_pre_day1_cond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorYellow"/>
 
             <TextView
                 android:id="@+id/tv_pre_day1_wind"
@@ -155,19 +181,22 @@
                 android:id="@+id/tv_pre_day2_maxtmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
 
             <TextView
                 android:id="@+id/tv_pre_day2_mintmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
 
             <TextView
                 android:id="@+id/tv_pre_day2_cond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorYellow"/>
 
             <TextView
                 android:id="@+id/tv_pre_day2_wind"
@@ -197,19 +226,22 @@
                 android:id="@+id/tv_pre_day3_maxtmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
 
             <TextView
                 android:id="@+id/tv_pre_day3_mintmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"/>
 
             <TextView
                 android:id="@+id/tv_pre_day3_cond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:textColor="@color/colorYellow"/>
 
             <TextView
                 android:id="@+id/tv_pre_day3_wind"
