@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:background="@color/colorGree"
+            android:background="@color/colorT"
             android:text="+"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:background="@color/colorB"
+            android:background="@color/colorTea"
             android:text="我的位置"
             android:textAllCaps="false"
             android:textSize="18sp"
@@ -42,13 +42,14 @@
         android:id="@+id/id_tv_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorBlue"
+        android:textColor="@color/colorYellow"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/id_tv_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorYellow"
         android:textSize="20sp" />
 
     <TextView
@@ -56,21 +57,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorYellow"/>
 
     <TextView
         android:id="@+id/id_tv_min_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorYellow"/>
 
     <TextView
         android:id="@+id/id_tv_temp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="@color/colorAccent"/>
+        android:textColor="@color/colorYellow"/>
 
     <TextView
         android:id="@+id/id_tv_cond"
@@ -83,18 +84,21 @@
         android:id="@+id/id_tv_dir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorYellow"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/id_tv_comf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorYellow"
         android:textSize="20sp" />
 
     <TextView
         android:id="@+id/id_tv_suggest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorYellow"
         android:textSize="20sp" />
 
     <TextView
@@ -105,7 +109,7 @@
         android:text="未来三天的天气情况"
         android:paddingTop="20dp"
         android:visibility="gone"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorTea"
         android:textSize="22sp" />
 
     <LinearLayout
@@ -129,7 +133,7 @@
                 android:gravity="center_horizontal"
                 android:text="明天"
                 android:visibility="gone"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorTea"
                 android:textSize="18sp" />
 
             <TextView
@@ -137,26 +141,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day1_mintmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day1_cond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorYellow"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day1_wind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorO"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -174,7 +179,7 @@
                 android:gravity="center_horizontal"
                 android:text="后天"
                 android:visibility="gone"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorTea"
                 android:textSize="18sp" />
 
             <TextView
@@ -182,26 +187,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day2_mintmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day2_cond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorYellow"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day2_wind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorO"
                 android:textSize="18sp" />
         </LinearLayout>
 
@@ -219,7 +225,7 @@
                 android:gravity="center_horizontal"
                 android:text="大后天"
                 android:visibility="gone"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorTea"
                 android:textSize="18sp" />
 
             <TextView
@@ -227,26 +233,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day3_mintmp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day3_cond"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:textColor="@color/colorYellow"/>
+                android:textColor="@color/colorO"/>
 
             <TextView
                 android:id="@+id/tv_pre_day3_wind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorO"
                 android:textSize="18sp" />
         </LinearLayout>
 

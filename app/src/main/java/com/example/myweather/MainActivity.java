@@ -197,11 +197,15 @@ public class MainActivity extends AppCompatActivity {
                 }else if (cond.equals("小雨")){
                     ly_container.setBackgroundResource(R.mipmap.weather_xiaoyu);
                 }else if (cond.equals("晴")){
-                    ly_container.setBackgroundResource(R.mipmap.weather_qing);
+                    ly_container.setBackgroundResource(R.mipmap.weath_qing02);
                 }else if (cond.equals("大雨")){
-                    ly_container.setBackgroundResource(R.mipmap.weather_xiaoyu);
+                    ly_container.setBackgroundResource(R.mipmap.weather_dayu);
                 }else if (cond.equals("多云")){
                     ly_container.setBackgroundResource(R.mipmap.weather_duoyun);
+                }else if (cond.equals("中雨")){
+                    ly_container.setBackgroundResource(R.mipmap.weather_zhongyu);
+                }else if (cond.equals("阵雨")){
+                    ly_container.setBackgroundResource(R.mipmap.weather_zhengyu);
                 }
             }
         }, new Response.ErrorListener() {
